@@ -2,9 +2,11 @@
 
 
 	local c = coroutine.create(function()
+		local s = "🙈"
 		print(2)
 		coroutine.yield()
 		print(4)
+		print(s .. "😮")
 	end)
 
 	-- error: attempt to yield from outside a coroutine
