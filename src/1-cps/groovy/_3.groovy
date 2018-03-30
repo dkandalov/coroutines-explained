@@ -1,22 +1,26 @@
-def callcc(f, continuation) {
-	f({ it -> continuation(it) })
+import static java.util.concurrent.TimeUnit.SECONDS
+
+def readBytes(URL url, continuation) {
+	def bytes = url.openStream().getBytes()
+	continuation(bytes)
 }
 
-def count = 0
-def savedCC = null
+def saveToFile(bytes, continuation) {
+	def file = new File("no-cat.jpg")
+	file.newDataOutputStream().write(bytes)
+	continuation(file)
+}
 
-println(1)
-callcc({ cc ->
-	println(2)
-	savedCC = cc
-	cc(3)
-	println("💥")
-}) {
-	println(it)
-	println(4)
-	if (count++ < 3) {
-		println("🚀")
-		savedCC(count)
+def openFile(filePath, continuation) {
+	def process = "idea $filePath".execute()
+	process.waitFor(2, SECONDS)
+	continuation(process.exitValue() == 0)
+}
+
+readBytes("https://i.pinimg.com/736x/35/f7/83/35f783f18d40b7d41fae5c51a25709d1.jpg".toURL()) { bytes ->
+	saveToFile(bytes) { file ->
+		openFile(file.absolutePath) {
+			println("Opened: $it")
+		}
 	}
-	System.exit(0)
 }
