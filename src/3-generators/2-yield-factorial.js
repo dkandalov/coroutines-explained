@@ -5,9 +5,9 @@ function* foo() {
 }
 
 function* factorial() {
-  var n = 0;
-  var result = 1;
-  var skip = 0;
+  let n = 0;
+  let result = 1;
+  let skip = 0;
   while (true) {
     if (!skip) {
       skip = yield result;
@@ -19,12 +19,12 @@ function* factorial() {
   }
 }
 
-var g = foo();
+const g = foo();
 console.log(g.next());
 console.log(g.next());
 console.log(g.next());
 
-var f = factorial();
+const f = factorial();
 console.log(f.next());
 console.log(f.next());
 console.log(f.next());
