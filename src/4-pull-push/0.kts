@@ -1,11 +1,8 @@
 @file:Suppress("EXPERIMENTAL_FEATURE_WARNING")
 
 import _0.CoDataSource.Companion.runInAsyncContext
-import java.util.concurrent.CompletableFuture
 import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.Executors
-import java.util.concurrent.Future
-import java.util.function.Supplier
 import kotlin.coroutines.experimental.Continuation
 import kotlin.coroutines.experimental.CoroutineContext
 import kotlin.coroutines.experimental.EmptyCoroutineContext
@@ -13,10 +10,12 @@ import kotlin.coroutines.experimental.createCoroutine
 import kotlin.coroutines.experimental.intrinsics.COROUTINE_SUSPENDED
 import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
 
+
 interface DataSource {
     fun blockingRead(): Int
     fun asyncRead(listener: (Int) -> Unit)
 }
+
 
 fun sequentialBlockingRead() {
     val dataSource = DataSourceList(listOf(1, 2, 3))
@@ -24,6 +23,7 @@ fun sequentialBlockingRead() {
     println(dataSource.blockingRead())
     println(dataSource.blockingRead())
 }
+
 
 fun sequentialAsyncRead() {
     val dataSource = DataSourceList(listOf(1, 2, 3))
@@ -52,7 +52,12 @@ fun sequentialReadWithCoroutines() {
     dataSource.waitToBeEmpty()
 }
 
-sequentialReadWithCoroutines()
+
+
+
+
+
+
 
 
 class DataSourceList(data: List<Int>): DataSource {
