@@ -1,3 +1,5 @@
+
+
 (define (log message)
  (display message)
  (newline)

@@ -1,9 +1,13 @@
-(define (hello)
- (display "hello")
- (newline)
-)
 
-(define (main args)
-  (hello)
-  (hello)
-)
+
+
+    (define (hello)
+     (display "hello")
+     (newline)
+    )
+
+    (define (main args)
+      (hello)
+      (hello)
+    )
+

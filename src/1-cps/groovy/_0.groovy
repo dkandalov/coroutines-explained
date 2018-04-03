@@ -1,5 +1,7 @@
 
-def hello() {
-	println("hello")
-}
-hello()
+
+	def hello() {
+		println("hello")
+	}
+	hello()
+
