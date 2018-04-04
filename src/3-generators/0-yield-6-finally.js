@@ -9,6 +9,8 @@
         } catch (e) {
           console.log("catch");
           yield "💥";
+        } finally {
+          console.log("finally");
         }
       }
 

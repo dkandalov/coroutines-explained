@@ -2,8 +2,7 @@
 
 
             interface Iterator<T> {
-                @Throws(Exception::class)
-                fun moveNext(): Boolean
+                fun moveNext(): Boolean // @Throws(Exception::class)
                 fun current(): T
             }
 
