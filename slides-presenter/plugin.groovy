@@ -41,18 +41,46 @@ def slides = [
 	"src/0-coroutines/5_.js",
 	"src/0-coroutines/6.js",
 	"src/0-coroutines/6_.js",
-	takeSlides(8),
-	"src/1-cps/groovy/_0.groovy",
-	"src/1-cps/groovy/_1.groovy",
-	"src/1-cps/groovy/_2.groovy",
+	takeSlides(10),
+	"src/1-cps/groovy/_0_hello.groovy",
+	"src/1-cps/groovy/_0_hello_.groovy",
+	"src/1-cps/groovy/_1_id.groovy",
+	"src/1-cps/groovy/_1_id_.groovy",
+	"src/1-cps/groovy/_2_factorial.groovy",
+	"src/1-cps/groovy/_2_factorial_.groovy",
 	"src/1-cps/groovy/_3.groovy",
 	"src/1-cps/groovy/_4.groovy",
-	(37..42).collect { "slides/slides.${String.format("%03d", it)}.png" },
+	takeSlides(1),
 	"src/2-callcc/0-hello.scm",
 	"src/2-callcc/1-return.scm",
 	"src/2-callcc/2-saved-return.scm",
 	"src/2-callcc/3-yield.scm",
 	"src/2-callcc/5-multitasking.scm",
+	takeSlides(18),
+	"src/3-generators/0-yield.js",
+	"src/3-generators/0-yield-1.js",
+	"src/3-generators/0-yield-2.js",
+	"src/3-generators/0-yield-2-loop.js",
+	"src/3-generators/0-yield-3-loop.js",
+	"src/3-generators/0-yield-6-catch.js",
+	"src/3-generators/0-yield-6-finally.js",
+	"src/3-generators/1-yield-factorial.js",
+	"src/3-generators/1-yield-factorial-2.js",
+	"src/3-generators/1b-yield-factorial.js",
+	"src/3-generators/2-yield.cs",
+	"src/3-generators/2-yield-fibonacci.cs",
+	takeSlides(1),
+	"src/4-pull-push/0.kts",
+	takeSlides(11),
+	"src/4-pull-push/1-iterable-observable.kts",
+	takeSlides(5),
+	"src/5-async-await/0-0-blocking-read.js",
+	"src/5-async-await/0-1-callback-read.js",
+	"src/5-async-await/0-2-promise-read.js",
+	"src/5-async-await/0-3-async-read.js",
+	"src/5-async-await/0-3b-async-read.js",
+	"src/5-async-await/1.js",
+	takeSlides(5),
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"
@@ -75,12 +103,12 @@ registerAction("Previous10Slides", "alt F11") { event ->
 }
 registerAction("NextSlide", "F12") { event ->
 	currentSlide++
-	if (currentSlide > slides.size()) currentSlide = slides.size() - 1
+	if (currentSlide >= slides.size()) currentSlide = slides.size() - 1
 	openCurrentSlide(event)
 }
 registerAction("Next10Slides", "alt F12") { event ->
 	currentSlide += 10
-	if (currentSlide > slides.size()) currentSlide = slides.size() - 1
+	if (currentSlide >= slides.size()) currentSlide = slides.size() - 1
 	openCurrentSlide(event)
 }
 
@@ -95,6 +123,10 @@ registerEditorListener(pluginDisposable, new FileEditorManagerListener() {
 			scrollPane.viewport.background = JBColor.white
 			scrollPane.viewport.repaint()
 		}
+
+		def relativePath = file.canonicalPath.replace(slidesBasePath, "")
+		def i = slides.indexOf(relativePath)
+		if (i != -1) currentSlide = i
 	}
 })
 
