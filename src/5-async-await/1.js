@@ -1,16 +1,3 @@
-function createDataSource(data) {
-  return {
-    asyncRead: function(callback) {
-      setTimeout(() => callback(data.shift()));
-    }
-  }
-}
-
-function readPromiseFrom(dataSource) {
-  return new Promise((resolve, reject) => {
-    dataSource.asyncRead(it => resolve(it));
-  });
-}
 
 function sequentialPromiseWhileRead() {
   let dataSource = createDataSource([1, 2, 3]);
@@ -34,3 +21,19 @@ async function sequentialAsyncAwaitWhileRead() {
 
 sequentialPromiseWhileRead();
 console.log("done");
+
+
+
+function createDataSource(data) {
+  return {
+    asyncRead: function(callback) {
+      setTimeout(() => callback(data.shift()));
+    }
+  }
+}
+
+function readPromiseFrom(dataSource) {
+  return new Promise((resolve, reject) => {
+    dataSource.asyncRead(it => resolve(it));
+  });
+}
