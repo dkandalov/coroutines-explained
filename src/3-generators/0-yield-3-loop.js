@@ -4,7 +4,7 @@
 
 		function* createGenerator() {
 			console.log(yield "🐶");
-			console.log(yield "🐸");
+			console.log(yield "🐱");
 			for (let it of [1, 2, 3]) {
 				console.log(yield it);
 			}

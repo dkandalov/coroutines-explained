@@ -23,7 +23,7 @@
 		console.log(3);
 		resolve1("🐶");
 		console.log(4);
-		resolve2("🐸");
+		resolve2("🐱");
 		console.log(5);
 		resolve3("🙈");
 
