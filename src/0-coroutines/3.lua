@@ -1,15 +1,22 @@
 
 
-	local c1 = coroutine.create(function()
+
+	c2 = coroutine.create(function()
 		print(2)
 		coroutine.yield()
 		print(4)
-	end)
-	local c2 = coroutine.create(function()
-		print(1)
-		coroutine.resume(c1)
-		print(3)
+		coroutine.yield()
 	end)
 
-	coroutine.resume(c2)
+	c1 = coroutine.create(function()
+		print(1)
+		coroutine.resume(c2)
+		print(3)
+		coroutine.resume(c2)
+		print(5)
+	end)
+
 	coroutine.resume(c1)
+
+
+	

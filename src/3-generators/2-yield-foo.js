@@ -5,8 +5,8 @@ function* foo() {
   // ["a", "b", "c"].forEach(function(it){ yield it; })
 }
 
-const g = foo();
-console.log(g.next());
-console.log(g.next());
-console.log(g.next());
+const generator = foo();
+console.log(generator.next());
+console.log(generator.next());
+console.log(generator.next());
 

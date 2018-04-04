@@ -1,8 +1,11 @@
 
 
-	local c = coroutine.create(function(n)
+
+	c = coroutine.create(function(n)
 		print("c <- " .. n)
 		n = coroutine.yield(2)
+		print("c <- " .. n)
+		n = coroutine.yield(4)
 		print("c <- " .. n)
 	end)
 
@@ -10,3 +13,5 @@
 	print("main <- " .. tostring(n))
 	_, n = coroutine.resume(c, 3)
 	print("main <- " .. tostring(n))
+
+

@@ -9,14 +9,16 @@ function foo() {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
-          return 1;
+          console.log(2);
+          _context.next = 3;
+          return;
 
-        case 2:
-          _context.next = 4;
-          return 2;
+        case 3:
+          console.log(4);
+          _context.next = 6;
+          return;
 
-        case 4:
+        case 6:
         case "end":
           return _context.stop();
       }
@@ -24,7 +26,10 @@ function foo() {
   }, _marked, this);
 }
 
-var generator = foo();
-console.log(generator.next());
-console.log(generator.next());
-console.log(generator.next());
+var c = foo();
+console.log(1);
+c.next();
+console.log(3);
+c.next();
+console.log(5);
+c.next();

@@ -1,17 +1,15 @@
 
 
 
-	local c = coroutine.create(function()
-		local s = "🙈"
+	c = coroutine.create(function()
 		print(2)
 		coroutine.yield()
 		print(4)
-		print(s .. "😮")
 		coroutine.yield()
 	end)
 
 	-- error: attempt to yield from outside a coroutine
-	-- coroutine.yield()
+	--coroutine.yield()
 
 	print(1)
 	coroutine.resume(c)
