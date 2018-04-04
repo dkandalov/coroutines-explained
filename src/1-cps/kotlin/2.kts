@@ -1,7 +1,7 @@
 
 fun factorial(n: Int): Int {
-    if (n == 0) return 1
-    else return n * factorial(n - 1)
+    return if (n == 0) 1
+    else n * factorial(n - 1)
 }
 
 fun factorialCPS(n: Int, continuation: (Int) -> Unit) {

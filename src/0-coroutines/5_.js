@@ -2,19 +2,19 @@
 
 "use strict";
 
-var _marked = /*#__PURE__*/regeneratorRuntime.mark(foo);
+var _marked = /*#__PURE__*/regeneratorRuntime.mark(createGenerator);
 
-function foo() {
-  return regeneratorRuntime.wrap(function foo$(_context) {
+function createGenerator() {
+  return regeneratorRuntime.wrap(function createGenerator$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log(2);
+          console.log("2");
           _context.next = 3;
           return;
 
         case 3:
-          console.log(4);
+          console.log("4");
           _context.next = 6;
           return;
 
@@ -26,10 +26,10 @@ function foo() {
   }, _marked, this);
 }
 
-var c = foo();
-console.log(1);
+var c = createGenerator();
+console.log("1");
 c.next();
-console.log(3);
+console.log("3");
 c.next();
-console.log(5);
+console.log("5");
 c.next();

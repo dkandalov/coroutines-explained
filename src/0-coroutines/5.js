@@ -1,18 +1,18 @@
 
 
 
-      function* foo() {
-        console.log(2);
+      function* createGenerator() {
+        console.log("2");
         yield;
-        console.log(4);
+        console.log("4");
         yield;
       }
 
-      const c = foo();
-      console.log(1);
+      const c = createGenerator();
+      console.log("1");
       c.next();
-      console.log(3);
+      console.log("3");
       c.next();
-      console.log(5);
+      console.log("5");
       c.next();
 
