@@ -1,9 +1,9 @@
 
 
 
-	def identity(value) {
-		value
-	}
+		def identity(value) {
+			value
+		}
 
-	println(identity(123))
+		println(identity(123))
 

@@ -1,12 +1,13 @@
 
+	
 
 
-	function sub_routine()
-		print("foo")
-	end
+		function sub_routine()
+			print("foo")
+		end
 
-	print("hello")
-	sub_routine()
-	print("good bye")
+		print("hello")
+		sub_routine()
+		print("good bye")
 
 

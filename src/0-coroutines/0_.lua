@@ -1,8 +1,10 @@
 
 
 
-    function main()
-	    print("hello")
-    end
 
-    main()
+	    function main()
+		    print("hello")
+	    end
+
+	    main()
+
