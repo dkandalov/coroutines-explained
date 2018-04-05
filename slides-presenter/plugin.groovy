@@ -57,6 +57,14 @@ def slides = [
 	"src/2-callcc/3-yield.scm",
 	"src/2-callcc/5-multitasking.scm",
 	takeSlides(18),
+/*
+	"src/3-generators/kotlin/0-basic-yield.kts",
+	"src/3-generators/kotlin/0-basic-yield-value.kts",
+	"src/3-generators/kotlin/1-0-yield.kts",
+	"src/3-generators/kotlin/1-1-yield-loop.kts",
+	"src/3-generators/kotlin/1-2-yield-finally.kts",
+	"src/3-generators/kotlin/2-factorial.kts",
+*/
 	"src/3-generators/0-yield.js",
 	"src/3-generators/0-yield-1.js",
 	"src/3-generators/0-yield-2.js",
@@ -73,14 +81,14 @@ def slides = [
 	"src/4-pull-push/0.kts",
 	takeSlides(11),
 	"src/4-pull-push/1-iterable-observable.kts",
-	takeSlides(5),
+	takeSlides(3),
 	"src/5-async-await/0-0-blocking-read.js",
 	"src/5-async-await/0-1-callback-read.js",
 	"src/5-async-await/0-2-promise-read.js",
 	"src/5-async-await/0-3-async-read.js",
 	"src/5-async-await/0-3b-async-read.js",
 	"src/5-async-await/1.js",
-	takeSlides(5),
+	takeSlides(12),
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"

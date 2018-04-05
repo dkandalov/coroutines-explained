@@ -3,7 +3,9 @@
         typealias Fun = (Any) -> Unit
 
         fun callcc(f: (Fun) -> Unit, continuation: Fun) {
-            f(fun(it: Any) { continuation(it) })
+            f(fun(it: Any) {
+                continuation(it)
+            })
         }
 
         var count = 0

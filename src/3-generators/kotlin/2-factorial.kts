@@ -15,5 +15,5 @@ fun factorial(): Sequence<Int> {
     }
 }
 
-println(factorial().take(10))
+println(factorial().take(10).toList())
 

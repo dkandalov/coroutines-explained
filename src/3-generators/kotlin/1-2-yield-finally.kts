@@ -3,14 +3,14 @@
 import kotlin.coroutines.experimental.buildSequence
 
 fun foo(): Sequence<Int> {
-    return try {
-        buildSequence {
+    return buildSequence {
+        try {
             yield(1)
             yield(2)
             yield(3)
+        } finally {
+            println("finally")
         }
-    } finally {
-        println("finally")
     }
 }
 
