@@ -7,6 +7,7 @@
 			coroutine.yield()
 			print(4)
 			coroutine.yield()
+			print("🙈")
 		end)
 
 		-- error: attempt to yield from outside a coroutine

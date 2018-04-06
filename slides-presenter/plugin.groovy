@@ -23,72 +23,81 @@ def takeSlides = { amount ->
 }
 
 def slides = [
-	takeSlides(8),
-	"src/0-coroutines/0.lua",
-	"src/0-coroutines/0_.lua",
-	takeSlides(7),
-	"src/0-coroutines/0__.lua",
-	takeSlides(10),
-	"src/0-coroutines/1.lua",
-	"src/0-coroutines/2.lua",
-	"src/0-coroutines/2_.lua",
+	takeSlides(1),
+
+	// Brief history
 	takeSlides(2),
-	"src/0-coroutines/3.lua",
+	
+	takeSlides(2),
+
+	// Coroutines as threads
+	takeSlides(8),
+	"src/0-coroutines-as-threads/0-subroutine.lua",
 	takeSlides(12),
-	"src/0-coroutines/4.lua",
-	takeSlides(1),
-	"src/0-coroutines/5.js",
-	"src/0-coroutines/5_.js",
-	"src/0-coroutines/6.js",
-	"src/0-coroutines/6_.js",
-	takeSlides(10),
-	"src/1-cps/groovy/_0_hello.groovy",
-	"src/1-cps/groovy/_0_hello_.groovy",
-	"src/1-cps/groovy/_1_id.groovy",
-	"src/1-cps/groovy/_1_id_.groovy",
-	"src/1-cps/groovy/_2_factorial.groovy",
-	"src/1-cps/groovy/_2_factorial_.groovy",
-	"src/1-cps/groovy/_3.groovy",
-	"src/1-cps/groovy/_4.groovy",
-	takeSlides(1),
-	"src/2-callcc/0-hello.scm",
-	"src/2-callcc/1-return.scm",
-	"src/2-callcc/2-saved-return.scm",
-	"src/2-callcc/3-yield.scm",
-	"src/2-callcc/5-multitasking.scm",
-	takeSlides(18),
-/*
-	"src/3-generators/kotlin/0-basic-yield.kts",
-	"src/3-generators/kotlin/0-basic-yield-value.kts",
-	"src/3-generators/kotlin/1-0-yield.kts",
-	"src/3-generators/kotlin/1-1-yield-loop.kts",
-	"src/3-generators/kotlin/1-2-yield-finally.kts",
-	"src/3-generators/kotlin/2-factorial.kts",
-*/
-	"src/3-generators/0-yield.js",
-	"src/3-generators/0-yield-1.js",
-	"src/3-generators/0-yield-2.js",
-	"src/3-generators/0-yield-2-loop.js",
-	"src/3-generators/0-yield-3-loop.js",
-	"src/3-generators/0-yield-6-catch.js",
-	"src/3-generators/0-yield-6-finally.js",
-	"src/3-generators/1-yield-factorial.js",
-	"src/3-generators/1-yield-factorial-2.js",
-	"src/3-generators/1b-yield-factorial.js",
-	"src/3-generators/2-yield.cs",
-	"src/3-generators/2-yield-fibonacci.cs",
-	takeSlides(1),
-	"src/4-pull-push/0.kts",
-	takeSlides(11),
-	"src/4-pull-push/1-iterable-observable.kts",
+	"src/0-coroutines-as-threads/1.lua",
+	"src/0-coroutines-as-threads/2.lua",
+	"src/0-coroutines-as-threads/2_.lua",
+	takeSlides(2),
+	"src/0-coroutines-as-threads/3-c1c2.lua",
+	takeSlides(13),
+	"src/0-coroutines-as-threads/4-sub-yield.lua",
 	takeSlides(3),
-	"src/5-async-await/0-0-blocking-read.js",
-	"src/5-async-await/0-1-callback-read.js",
-	"src/5-async-await/0-2-promise-read.js",
-	"src/5-async-await/0-3-async-read.js",
-	"src/5-async-await/0-3b-async-read.js",
-	"src/5-async-await/1.js",
+
+	// Coroutines as yield
+	takeSlides(3),
+	"src/1-coroutines-yield/0-yield-0.js",
+	"src/1-coroutines-yield/0-yield-0b.js",
+	"src/1-coroutines-yield/0-yield-1.js",
+	"src/1-coroutines-yield/0-yield-2.js",
+	"src/1-coroutines-yield/0-yield-2-loop.js",
+	"src/1-coroutines-yield/0-yield-3-loop.js",
+	"src/1-coroutines-yield/0-yield-6-catch.js",
+	"src/1-coroutines-yield/0-yield-6-finally.js",
+	"src/1-coroutines-yield/1-yield-factorial.js",
+	"src/1-coroutines-yield/1-yield-factorial-2.js",
+	"src/1-coroutines-yield/1b-yield-factorial.js",
+	"src/1-coroutines-yield/2-yield.cs",
+	"src/1-coroutines-yield/2-yield-fibonacci.cs",
 	takeSlides(12),
+
+	// Coroutines as async/await
+	"src/2-coroutines-as-asyncawait/0.js",
+	takeSlides(2),
+
+	// coroutines as call/cc
+	takeSlides(4),
+	"src/3-coroutines-as-callcc/1-callcc/0-hello.scm",
+	"src/3-coroutines-as-callcc/1-callcc/1-return.scm",
+	"src/3-coroutines-as-callcc/1-callcc/2-saved-return.scm",
+	takeSlides(11),
+	"src/3-coroutines-as-callcc/1-callcc/3-yield.scm",
+	takeSlides(3),
+
+	// Coroutines design flavours comparison
+	takeSlides(6),
+
+	// Real world generators examples
+	takeSlides(1),
+	"src/4-generators/0.kts",
+	takeSlides(1),
+
+	// Callback hell
+	takeSlides(1),
+	"src/5-callback-hell/0-0-blocking-read.js",
+	"src/5-callback-hell/0-1-callback-read.js",
+	"src/5-callback-hell/0-2-promise-read.js",
+	"src/5-callback-hell/0-3-async-read.js",
+	"src/5-callback-hell/0-3b-async-read.js",
+	"src/5-callback-hell/kotlin/1-iterable-observable.kts",
+	takeSlides(3),
+
+	// Monads in imperative language
+	takeSlides(1),
+	"src/6-monads/1.js",
+	takeSlides(2),
+
+	// Summary
+	takeSlides(3)
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"

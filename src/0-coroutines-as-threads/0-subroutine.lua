@@ -3,11 +3,11 @@
 
 
 		function sub_routine()
-			print("foo")
+			print("from ")
 		end
 
-		print("hello")
+		print("hello ")
 		sub_routine()
-		print("good bye")
+		print("Lua")
 
 
