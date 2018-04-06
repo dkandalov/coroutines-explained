@@ -5,49 +5,49 @@
 var _marked = /*#__PURE__*/regeneratorRuntime.mark(factorial);
 
 function factorial() {
-  var n, result, skip;
-  return regeneratorRuntime.wrap(function factorial$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          n = 0;
-          result = 1;
-          skip = 0;
+	var n, result, skip;
+	return regeneratorRuntime.wrap(function factorial$(_context) {
+		while (1) {
+			switch (_context.prev = _context.next) {
+				case 0:
+					n = 0;
+					result = 1;
+					skip = 0;
 
-        case 3:
-          if (!true) {
-            _context.next = 15;
-            break;
-          }
+				case 3:
+					if (!true) {
+						_context.next = 15;
+						break;
+					}
 
-          if (skip) {
-            _context.next = 10;
-            break;
-          }
+					if (skip) {
+						_context.next = 10;
+						break;
+					}
 
-          _context.next = 7;
-          return result;
+					_context.next = 7;
+					return result;
 
-        case 7:
-          skip = _context.sent;
-          _context.next = 11;
-          break;
+				case 7:
+					skip = _context.sent;
+					_context.next = 11;
+					break;
 
-        case 10:
-          skip--;
+				case 10:
+					skip--;
 
-        case 11:
-          n++;
-          result = result * n;
-          _context.next = 3;
-          break;
+				case 11:
+					n++;
+					result = result * n;
+					_context.next = 3;
+					break;
 
-        case 15:
-        case "end":
-          return _context.stop();
-      }
-    }
-  }, _marked, this);
+				case 15:
+				case "end":
+					return _context.stop();
+			}
+		}
+	}, _marked, this);
 }
 
 var f = factorial();

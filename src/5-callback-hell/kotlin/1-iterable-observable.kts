@@ -10,6 +10,7 @@
                 fun iterator(): Iterator<T>
             }
 
+            // -----------------------------------
 
             interface Observer<T> {
                 fun onNext(value: T)

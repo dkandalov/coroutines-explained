@@ -15,5 +15,5 @@
 		let overallPromise = c();
 		overallPromise.then((it) => console.log(it));
 		resolvePromise1("🐶");
-		resolvePromise2("🐱");
+		resolvePromise2("🐷");
 

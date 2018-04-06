@@ -15,7 +15,7 @@
     (define (task-2 do-other-tasks)
      (let loop ()
       (for-each (lambda (item)
-         (display "🐱 ")
+         (display "🐷 ")
          (display item)
          (newline)
          (set! do-other-tasks (call/cc do-other-tasks))

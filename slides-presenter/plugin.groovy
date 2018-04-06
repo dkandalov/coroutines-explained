@@ -94,6 +94,7 @@ def slides = [
 
 	// Monads in imperative language
 	takeSlides(1),
+	"src/6-monads/0.js",
 	"src/6-monads/1.js",
 	takeSlides(2),
 

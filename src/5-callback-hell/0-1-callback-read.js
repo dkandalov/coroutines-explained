@@ -1,6 +1,6 @@
 
 
-		function createDataSource(data) {
+		function createAsyncDataSource(data) {
 			return {
 				asyncRead: function(callback) {
 					setTimeout(() => callback(data.shift()));
@@ -8,7 +8,7 @@
 			}
 		}
 
-		let dataSource = createDataSource([1, 2, 3]);
+		let dataSource = createAsyncDataSource([1, 2, 3]);
 		dataSource.asyncRead(it => {
 			console.log(it);
 			dataSource.asyncRead(it => {

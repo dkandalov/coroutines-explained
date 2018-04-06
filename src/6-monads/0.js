@@ -2,18 +2,20 @@
 
 
 
-		function sequentialRead() {
+		async function sequentialRead() {
 			let dataSource = createAsyncDataSource([1, 2, 3]);
 			let i = 0;
-			let promise = Promise.resolve();
 			while (i++ < 3) {
-				promise = promise
-				.then(() => readPromiseFrom(dataSource))
-				.then((it) => console.log(it));
+				console.log(await readPromiseFrom(dataSource));
 			}
 		}
 
 		sequentialRead().then((it) => console.log(it));
+
+
+
+
+
 
 
 
