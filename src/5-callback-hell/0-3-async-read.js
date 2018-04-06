@@ -16,13 +16,9 @@
 
 		async function main() {
 			let dataSource = createDataSource([1, 2, 3]);
-
-			let it = await readPromiseFrom(dataSource);
-			console.log(it);
-			it = await readPromiseFrom(dataSource);
-			console.log(it);
-			it = await readPromiseFrom(dataSource);
-			console.log(it);
+			console.log(await readPromiseFrom(dataSource));
+			console.log(await readPromiseFrom(dataSource));
+			console.log(await readPromiseFrom(dataSource));
 		}
 
 		main();

@@ -4,7 +4,6 @@
 
 		function* createGenerator() {
 			console.log(yield "🐶");
-			console.log(yield "🐱");
 			[1, 2, 3].forEach(it => {
 				console.log(yield it);
 			});

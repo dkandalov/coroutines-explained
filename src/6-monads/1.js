@@ -15,8 +15,7 @@
 		  let dataSource = createDataSource([1, 2, 3]);
 		  let i = 0;
 		  while (i++ < 3) {
-			let it = await readPromiseFrom(dataSource);
-			console.log(it);
+			console.log(await readPromiseFrom(dataSource));
 		  }
 		}
 

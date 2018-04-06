@@ -14,5 +14,6 @@
 		print("main <- " .. tostring(n))
 		_, n = coroutine.resume(c, 3)
 		print("main <- " .. tostring(n))
+		_, n = coroutine.resume(c, 5)
 
 

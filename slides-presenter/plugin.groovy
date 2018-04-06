@@ -46,12 +46,10 @@ def slides = [
 	// Coroutines as yield
 	takeSlides(3),
 	"src/1-coroutines-yield/0-yield-0.js",
-	"src/1-coroutines-yield/0-yield-0b.js",
 	"src/1-coroutines-yield/0-yield-1.js",
 	"src/1-coroutines-yield/0-yield-2.js",
 	"src/1-coroutines-yield/0-yield-2-loop.js",
 	"src/1-coroutines-yield/0-yield-3-loop.js",
-	"src/1-coroutines-yield/0-yield-6-catch.js",
 	"src/1-coroutines-yield/0-yield-6-finally.js",
 	"src/1-coroutines-yield/1-yield-factorial.js",
 	"src/1-coroutines-yield/1-yield-factorial-2.js",
@@ -62,6 +60,8 @@ def slides = [
 
 	// Coroutines as async/await
 	"src/2-coroutines-as-asyncawait/0.js",
+	"src/2-coroutines-as-asyncawait/1.js",
+	"src/2-coroutines-as-asyncawait/2.js",
 	takeSlides(2),
 
 	// coroutines as call/cc
@@ -88,8 +88,9 @@ def slides = [
 	"src/5-callback-hell/0-2-promise-read.js",
 	"src/5-callback-hell/0-3-async-read.js",
 	"src/5-callback-hell/0-3b-async-read.js",
+	takeSlides(1),
 	"src/5-callback-hell/kotlin/1-iterable-observable.kts",
-	takeSlides(3),
+	takeSlides(2),
 
 	// Monads in imperative language
 	takeSlides(1),
@@ -97,7 +98,7 @@ def slides = [
 	takeSlides(2),
 
 	// Summary
-	takeSlides(3)
+	takeSlides(6)
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"

@@ -15,5 +15,4 @@
 		console.log("3");
 		c.next();
 		console.log("5");
-		c.next();
 
