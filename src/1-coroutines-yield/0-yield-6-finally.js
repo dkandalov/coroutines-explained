@@ -6,7 +6,7 @@
 			try {
 				let value = yield;
 				if (value === "🚀") throw value;
-				yield "🐶";
+				yield "🙈";
 			} catch (e) {
 				console.log("catch");
 				yield "💥";

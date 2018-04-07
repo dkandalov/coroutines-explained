@@ -78,7 +78,7 @@ def slides = [
 
 	// Real world generators examples
 	takeSlides(1),
-	"src/4-generators/0.kts",
+	"src/4-generators/0-database-stream.kts",
 	takeSlides(1),
 
 	// Callback hell

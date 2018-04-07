@@ -8,7 +8,7 @@
 		}
 
 		const c = createGenerator();
-		console.log(c.next("A"));
+		console.log(c.next("will be lost"));
 		console.log(c.next("B"));
 		console.log(c.next("C"));
 

@@ -7,6 +7,7 @@
 			yield;
 			console.log("4");
 			yield;
+			console.log("🙈");
 		}
 
 		const c = createGenerator();
