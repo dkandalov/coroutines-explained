@@ -1,19 +1,26 @@
 
+		function createAsyncDataSource(data) {
+			return {
+				asyncRead: function(callback) {
+					setTimeout(() => callback(data.shift()), 10);
+				}
+			}
+		}
 
-		function readPromiseFrom(dataSource) {
+		function readPromiseFrom(asyncDataSource) {
 			return new Promise((resolve) => {
-				dataSource.asyncRead(it => resolve(it));
+				asyncDataSource.asyncRead(it => resolve(it));
 			});
 		}
 
-		async function main() {
+		async function coroutine() {
 			let dataSource = createAsyncDataSource([1, 2, 3]);
 			console.log(await readPromiseFrom(dataSource));
 			console.log(await readPromiseFrom(dataSource));
 			console.log(await readPromiseFrom(dataSource));
 		}
 
-		main();
+		coroutine();
 		console.log("done");
 
 
@@ -29,10 +36,3 @@
 
 
 
-		function createAsyncDataSource(data) {
-			return {
-				asyncRead: function(callback) {
-					setTimeout(() => callback(data.shift()));
-				}
-			}
-		}

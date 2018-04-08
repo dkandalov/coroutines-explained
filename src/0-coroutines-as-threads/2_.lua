@@ -3,20 +3,17 @@
 
 
 		c = coroutine.create(function(n)
-			print("c: " .. coroutine.status(c))
+			print("c <- " .. n)
 			n = coroutine.yield(2)
-			print("c: " .. coroutine.status(c))
+			print("c <- " .. n)
 			n = coroutine.yield(4)
-			print("c: " .. coroutine.status(c))
+			print("c <- " .. n)
 		end)
 
-		print("main: " .. coroutine.status(c))
-
 		_, n = coroutine.resume(c, 1)
-		print("main: " .. coroutine.status(c))
+		print("main <- " .. tostring(n))
 		_, n = coroutine.resume(c, 3)
-		print("main: " .. coroutine.status(c))
+		print("main <- " .. tostring(n))
 		_, n = coroutine.resume(c, 5)
-		print("main: " .. coroutine.status(c))
 
 

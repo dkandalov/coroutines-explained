@@ -66,6 +66,15 @@ def slides = [
 
 	// coroutines as call/cc
 	takeSlides(4),
+	"src/3-coroutines-as-callcc/0-cps/kotlin/0_hello.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/0_hello_.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/1_id.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/1_id_.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/2_factorial.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/2_factorial_.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/3.kts",
+	"src/3-coroutines-as-callcc/0-cps/kotlin/4.kts",
+	takeSlides(1),
 	"src/3-coroutines-as-callcc/1-callcc/0-hello.scm",
 	"src/3-coroutines-as-callcc/1-callcc/1-return.scm",
 	"src/3-coroutines-as-callcc/1-callcc/2-saved-return.scm",

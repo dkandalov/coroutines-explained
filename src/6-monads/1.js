@@ -8,8 +8,8 @@
 			let promise = Promise.resolve();
 			while (i++ < 3) {
 				promise = promise
-				.then(() => readPromiseFrom(dataSource))
-				.then((it) => console.log(it));
+					.then(() => readPromiseFrom(dataSource))
+					.then((it) => console.log(it));
 			}
 		}
 
