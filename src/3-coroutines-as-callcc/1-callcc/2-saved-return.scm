@@ -14,7 +14,7 @@
         (set! saved-return return)
         (log 2)
         (return 3)
-        (log "💥")
+        (log "🙈")
      ))))
      (log 4)
 

@@ -17,21 +17,17 @@ import static liveplugin.PluginUtil.show
 if (isIdeStartup) return
 
 def slidePath = { "slides/slides.${String.format("%03d", it)}.png" }
-def pngSlides = (1..100).collect { slidePath(it) }
+def pngSlides = (1..200).collect { slidePath(it) }
 def takeSlides = { amount ->
 	(0..<amount).collect { pngSlides.remove(0) }
 }
 
 def slides = [
-	takeSlides(1),
-
-	// Brief history
-	takeSlides(2),
+	takeSlides(6),
 	
-	takeSlides(2),
-
 	// Coroutines as threads
-	takeSlides(8),
+	takeSlides(2),
+	takeSlides(7),
 	"src/0-coroutines-as-threads/0-subroutine.lua",
 	takeSlides(12),
 	"src/0-coroutines-as-threads/1.lua",
@@ -44,7 +40,7 @@ def slides = [
 	takeSlides(3),
 
 	// Coroutines as yield
-	takeSlides(3),
+	takeSlides(4),
 	"src/1-coroutines-yield/0-yield-0.js",
 	"src/1-coroutines-yield/0-yield-1.js",
 	"src/1-coroutines-yield/0-yield-2.js",
@@ -62,18 +58,18 @@ def slides = [
 	"src/2-coroutines-as-asyncawait/0.js",
 	"src/2-coroutines-as-asyncawait/1.js",
 	"src/2-coroutines-as-asyncawait/2.js",
+	"src/2-coroutines-as-asyncawait/2b.js",
 	takeSlides(2),
 
 	// coroutines as call/cc
-	takeSlides(4),
-	"src/3-coroutines-as-callcc/0-cps/kotlin/0_hello.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/0_hello_.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/1_id.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/1_id_.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/2_factorial.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/2_factorial_.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/3.kts",
-	"src/3-coroutines-as-callcc/0-cps/kotlin/4.kts",
+	takeSlides(3),
+	"src/3-coroutines-as-callcc/0-cps/groovy/_0_hello.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_0_hello_.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_1_id.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_1_id_.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_2_factorial.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_2_factorial_.groovy",
+	"src/3-coroutines-as-callcc/0-cps/groovy/_3.groovy",
 	takeSlides(1),
 	"src/3-coroutines-as-callcc/1-callcc/0-hello.scm",
 	"src/3-coroutines-as-callcc/1-callcc/1-return.scm",
@@ -96,8 +92,7 @@ def slides = [
 	"src/5-callback-hell/0-1-callback-read.js",
 	"src/5-callback-hell/0-2-promise-read.js",
 	"src/5-callback-hell/0-3-async-read.js",
-	"src/5-callback-hell/0-3b-async-read.js",
-	takeSlides(1),
+	takeSlides(3),
 	"src/5-callback-hell/kotlin/1-iterable-observable.kts",
 	takeSlides(2),
 

@@ -6,21 +6,20 @@
 			});
 		}
 
-
 		let dataSource = createAsyncDataSource([1, 2, 3]);
 
 		readPromiseFrom(dataSource)
-		.then(it => {
-			console.log(it);
-			return readPromiseFrom(dataSource);
-		})
-		.then(it => {
-			console.log(it);
-			return readPromiseFrom(dataSource);
-		})
-		.then(it => {
-			console.log(it);
-		});
+			.then(it => {
+				console.log(it);
+				return readPromiseFrom(dataSource);
+			})
+			.then(it => {
+				console.log(it);
+				return readPromiseFrom(dataSource);
+			})
+			.then(it => {
+				console.log(it);
+			});
 		console.log("done");
 
 
