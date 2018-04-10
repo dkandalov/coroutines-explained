@@ -110,7 +110,9 @@ def slides = [
 	takeSlides(2),
 
 	// Summary
-	takeSlides(7)
+	takeSlides(8),
+
+	"src/5-callback-hell/kotlin/x-snake.kts"
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"
