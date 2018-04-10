@@ -40,7 +40,7 @@ def slides = [
 	takeSlides(3),
 
 	// Coroutines as yield
-	takeSlides(4),
+	takeSlides(5),
 	"src/1-coroutines-yield/0-yield-0.js",
 	"src/1-coroutines-yield/0-yield-1.js",
 	"src/1-coroutines-yield/0-yield-2.js",
@@ -80,7 +80,7 @@ def slides = [
 	"src/3-coroutines-as-callcc/2-boost-callcc/callcc.cpp",
 	"src/3-coroutines-as-callcc/2-boost-callcc/callcc-factorial.cpp",
 	"src/4-generators/kotlin/0-basic-yield.kts",
-	takeSlides(3),
+	takeSlides(4),
 
 	// Coroutines design flavours comparison
 	takeSlides(6),
@@ -109,7 +109,7 @@ def slides = [
 	takeSlides(2),
 
 	// Summary
-	takeSlides(6)
+	takeSlides(7)
 ].flatten()
 
 def slidesBasePath = "/Users/dima/IdeaProjects/coroutines-explained/"
