@@ -23,7 +23,7 @@ def takeSlides = { amount ->
 }
 
 def slides = [
-	takeSlides(6),
+	takeSlides(7),
 	
 	// Coroutines as threads
 	takeSlides(2),
@@ -87,7 +87,8 @@ def slides = [
 
 	// Real world generators examples
 	takeSlides(1),
-	"src/4-generators/0-database-stream.kts",
+	"src/4-generators/0-date-sequence.kts",
+	"src/4-generators/1-database-stream.kts",
 	takeSlides(1),
 
 	// Callback hell
