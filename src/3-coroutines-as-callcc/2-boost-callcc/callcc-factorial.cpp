@@ -17,8 +17,8 @@
 			        }
 			        return std::move(c);
 			    });
-			    for (int i = 0; i < 10; ++i) {
-			        std::cout << result << "\n";
+			    for (int i = 0; i < 10; i++) {
+			        std::cout << result << std::endl;
 			        factorial = factorial.resume();
 			    }
 			}

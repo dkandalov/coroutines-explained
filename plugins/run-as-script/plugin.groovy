@@ -153,7 +153,7 @@ registerAction("CompileHaskell", "alt R", { AnActionEvent event ->
 				showInConsole(e, project)
 			}
 		})
-
+		return
 	}
 
 	if (file.extension == "cpp") {

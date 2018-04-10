@@ -74,7 +74,7 @@ def slides = [
 	takeSlides(1),
 	"src/3-coroutines-as-callcc/1-callcc/0-hello.scm",
 	"src/3-coroutines-as-callcc/1-callcc/1-return.scm",
-	"src/3-coroutines-as-callcc/1-callcc/2-saved-return.scm",
+	"src/3-coroutines-as-callcc/1-callcc/2-saved-continuation.scm",
 	takeSlides(11),
 	"src/3-coroutines-as-callcc/1-callcc/3-yield.scm",
 	"src/3-coroutines-as-callcc/2-boost-callcc/callcc.cpp",
