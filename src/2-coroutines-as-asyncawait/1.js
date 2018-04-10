@@ -1,10 +1,10 @@
 
 
 		let promise1 = new Promise(resolve => {
-			setTimeout(() => resolve("🐶"), 100);
+			setTimeout(() => resolve("🐶"), 2000);
 		});
 		let promise2 = new Promise(resolve => {
-			setTimeout(() => resolve("🐷"), 200);
+			setTimeout(() => resolve("🐷"), 4000);
 		});
 
 		async function c() {
@@ -14,5 +14,5 @@
 		}
 
 		let overallPromise = c();
-		overallPromise.then((it) => console.log(it + "!"));
+		overallPromise.then(it => console.log(it + "!"));
 

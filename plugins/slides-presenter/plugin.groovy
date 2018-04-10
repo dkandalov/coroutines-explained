@@ -50,8 +50,6 @@ def slides = [
 	"src/1-coroutines-yield/1-yield-factorial.js",
 	"src/1-coroutines-yield/1-yield-factorial-2.js",
 	"src/1-coroutines-yield/1b-yield-factorial.js",
-	"src/1-coroutines-yield/2-yield.cs",
-	"src/1-coroutines-yield/2-yield-fibonacci.cs",
 	"src/1-coroutines-yield/cpp/0-yield.cpp",
 	"src/1-coroutines-yield/cpp/1-yield.cpp",
 	takeSlides(12),
@@ -79,6 +77,9 @@ def slides = [
 	"src/3-coroutines-as-callcc/1-callcc/2-saved-return.scm",
 	takeSlides(11),
 	"src/3-coroutines-as-callcc/1-callcc/3-yield.scm",
+	"src/3-coroutines-as-callcc/2-boost-callcc/callcc.cpp",
+	"src/3-coroutines-as-callcc/2-boost-callcc/callcc-factorial.cpp",
+	"src/4-generators/kotlin/0-basic-yield.kts",
 	takeSlides(3),
 
 	// Coroutines design flavours comparison
@@ -101,8 +102,10 @@ def slides = [
 
 	// Monads in imperative language
 	takeSlides(1),
-	"src/6-monads/0.js",
-	"src/6-monads/1.js",
+	"src/6-monads/0-async-while.js",
+	"src/6-monads/1-promise-while.js",
+	"src/6-monads/2-async-retry.js",
+	"src/6-monads/3-promise-retry.js",
 	takeSlides(2),
 
 	// Summary

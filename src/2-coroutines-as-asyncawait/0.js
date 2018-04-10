@@ -1,10 +1,10 @@
 
 
 		let promise1 = new Promise(resolve => {
-			setTimeout(() => resolve(), 100);
+			setTimeout(() => resolve(), 3000);
 		});
 		let promise2 = new Promise(resolve => {
-			setTimeout(() => resolve(), 200);
+			setTimeout(() => resolve(), 6000);
 		});
 
 		async function c() {

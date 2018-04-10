@@ -2,6 +2,11 @@
 
 
 
+
+
+
+
+
 		function sequentialRead() {
 			let dataSource = createAsyncDataSource([1, 2, 3]);
 			let i = 0;
@@ -13,7 +18,7 @@
 			}
 		}
 
-		sequentialRead().then((it) => console.log(it));
+		sequentialRead();
 
 
 

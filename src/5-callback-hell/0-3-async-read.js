@@ -8,7 +8,7 @@
 		}
 
 		function readPromiseFrom(asyncDataSource) {
-			return new Promise((resolve) => {
+			return new Promise(resolve => {
 				asyncDataSource.asyncRead(it => resolve(it));
 			});
 		}

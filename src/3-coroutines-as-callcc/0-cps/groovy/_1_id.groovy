@@ -1,8 +1,10 @@
 
 
 
+
+
 		def identity(value) {
-			value
+			return value
 		}
 
 		println(identity(123))
