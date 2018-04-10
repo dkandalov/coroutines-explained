@@ -13,12 +13,12 @@ template <typename _Ty> struct generator {
     std::experimental::suspend_always initial_suspend() { return {}; }
     std::experimental::suspend_always final_suspend() { return {}; }
     generator get_return_object() { return generator{this}; };
-      void unhandled_exception() { std::terminate(); }
+    void unhandled_exception() { std::terminate(); }
     void return_void() {}
   };
 
   struct iterator {
-      std::experimental::coroutine_handle<promise_type> _Coro;
+    std::experimental::coroutine_handle<promise_type> _Coro;
     bool _Done;
 
     iterator(std::experimental::coroutine_handle<promise_type> Coro, bool Done)
