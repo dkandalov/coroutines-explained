@@ -102,10 +102,10 @@ def slides = [
 
 	// Monads in imperative language
 	takeSlides(1),
-	"src/6-monads/0-async-while.js",
-	"src/6-monads/1-promise-while.js",
-	"src/6-monads/2-async-retry.js",
-	"src/6-monads/3-promise-retry.js",
+	"src/6-async-vs-promises/0-async-while.js",
+	"src/6-async-vs-promises/1-promise-while.js",
+	"src/6-async-vs-promises/2-async-retry.js",
+	"src/6-async-vs-promises/3-promise-retry.js",
 	takeSlides(2),
 
 	// Summary
