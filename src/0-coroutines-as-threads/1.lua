@@ -10,6 +10,9 @@
 					print("🙈")
 				end)
 
+				-- error: attempt to yield from outside a coroutine
+				--coroutine.yield()
+
 				print(1)
 				coroutine.resume(c)
 				print(3)

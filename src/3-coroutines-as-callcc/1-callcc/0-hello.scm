@@ -1,13 +1,13 @@
 
 
 
-        (define (hello)
-         (display "hello")
-         (newline)
-        )
+			(define (log message)
+			  (display message)
+			  (newline)
+			)
 
-        (define (main args)
-          (hello)
-          (hello)
-        )
+            (define (main args)
+              (log "hello")
+              (log "from Scheme")
+            )
 
