@@ -11,7 +11,6 @@
 				end)
 
 				print("main: " .. coroutine.status(c))
-
 				coroutine.resume(c)
 				print("main: " .. coroutine.status(c))
 				coroutine.resume(c)

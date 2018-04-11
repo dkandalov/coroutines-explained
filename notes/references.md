@@ -14,7 +14,7 @@ Kotlin Coroutines - 2016 - https://www.youtube.com/watch?v=4W3ruTWUhpw
 
 Kotlin Coroutines Reloaded with Roman Elizarov - 2017 - https://www.youtube.com/watch?v=3xalVUY69Ok
 
-Introduction to Kotlin coroutines - Roman Elizarov - https://vimeo.com/221264980/b3ac7f9001
+Introduction to Kotlin coroutines (Geekout) - Roman Elizarov - https://vimeo.com/221264980/b3ac7f9001
 
 Introduction to Coroutines (kotlinconf) - Roman Elizarov - https://www.youtube.com/watch?list=PLQ176FUIyIUY6UK1cgVsbdPYA3X5WLam5&v=_hfBv0a09Jc
 
@@ -67,6 +67,7 @@ https://www.youtube.com/watch?v=fpyub8fbrVE
 ### Historical timeline
  - 1958: According to Donald Knuth, Melvin Conway coined the term coroutine in 1958 when he applied it to construction of an assembly program.
  - 1963: The first published explanation of the coroutine appeared later, in 1963
+ - 1967: Simula 67 introduced objects, classes, inheritance and subclasses, virtual procedures, coroutines, and discrete event simulation (https://en.wikipedia.org/wiki/Simula)
  - 1972: Scheme (https://en.wikipedia.org/wiki/History_of_the_Scheme_programming_language)
  - 2001: yield in Python 2.2 (https://www.python.org/download/releases/2.2) 
 	- 2006: In Python 2.5, generators picked up some new features to allow "coroutines" (PEP-342). Most notably: a new send() method
