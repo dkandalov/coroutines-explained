@@ -13,3 +13,4 @@
 				console.log(dataSource.blockingRead());
 				console.log(dataSource.blockingRead());
 				console.log(dataSource.blockingRead());
+				console.log("done");
