@@ -10,10 +10,10 @@
 					print("c <- " .. n)
 				end)
 
-				_, n = coroutine.resume(c, 1)
-				print("main <- " .. tostring(n))
-				_, n = coroutine.resume(c, 3)
-				print("main <- " .. tostring(n))
-				_, n = coroutine.resume(c, 5)
+				_, m = coroutine.resume(c, 1)
+				print("main <- " .. tostring(m))
+				_, m = coroutine.resume(c, 3)
+				print("main <- " .. tostring(m))
+				_, m = coroutine.resume(c, 5)
 
 

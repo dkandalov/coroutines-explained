@@ -35,7 +35,7 @@ def slides = [
 	"src/0-coroutines-as-threads/2_.lua",
 	takeSlides(2),
 	"src/0-coroutines-as-threads/3-c1c2.lua",
-	takeSlides(13),
+	takeSlides(14),
 	"src/0-coroutines-as-threads/4-sub-yield.lua",
 	takeSlides(3),
 
