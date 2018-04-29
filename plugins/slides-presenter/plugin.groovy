@@ -50,8 +50,6 @@ def slides = [
 	"src/1-coroutines-yield/1-yield-factorial.js",
 	"src/1-coroutines-yield/1-yield-factorial-2.js",
 	"src/1-coroutines-yield/1b-yield-factorial.js",
-	"src/1-coroutines-yield/cpp/0-yield.cpp",
-	"src/1-coroutines-yield/cpp/1-yield.cpp",
 	takeSlides(12),
 
 	// Coroutines as async/await
@@ -59,7 +57,6 @@ def slides = [
 	"src/2-coroutines-as-asyncawait/1.js",
 	"src/2-coroutines-as-asyncawait/2.js",
 	"src/2-coroutines-as-asyncawait/2b.js",
-	"src/2-coroutines-as-asyncawait/cpp/0-async-await.cpp",
 	takeSlides(2),
 
 	// coroutines as call/cc
@@ -77,8 +74,6 @@ def slides = [
 	"src/3-coroutines-as-callcc/1-callcc/2-saved-continuation.scm",
 	takeSlides(11),
 	"src/3-coroutines-as-callcc/1-callcc/3-yield.scm",
-	"src/3-coroutines-as-callcc/2-boost-callcc/callcc.cpp",
-	"src/3-coroutines-as-callcc/2-boost-callcc/callcc-factorial.cpp",
 	"src/4-generators/kotlin/0-basic-yield.kts",
 	takeSlides(4),
 
