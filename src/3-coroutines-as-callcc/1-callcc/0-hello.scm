@@ -8,6 +8,6 @@
 
             (define (main args)
               (log "hello")
-              (log "from Scheme")
+              (log "world")
             )
 
