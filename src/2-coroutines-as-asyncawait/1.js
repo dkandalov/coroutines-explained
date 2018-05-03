@@ -5,7 +5,7 @@
 				setTimeout(() => resolve("🐶"), 2000);
 			});
 			let promise2 = new Promise(resolve => {
-				setTimeout(() => resolve("🐷"), 4000);
+				setTimeout(() => resolve("🐷"), 5000);
 			});
 
 			async function c() {

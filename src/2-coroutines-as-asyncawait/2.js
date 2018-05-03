@@ -2,10 +2,10 @@
 
 
 			let promise1 = new Promise(resolve => {
-				setTimeout(() => resolve("🐶"), 100);
+				setTimeout(() => resolve("🐶"), 200);
 			});
 			let promise2 = new Promise((resolve, reject) => {
-				setTimeout(() => reject("💥"), 200);
+				setTimeout(() => reject("💥"), 500);
 			});
 
 			async function c() {
