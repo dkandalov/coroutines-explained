@@ -1,5 +1,25 @@
 (use http-client)
 
+(define (read-from-url url continuation)
+	(continuation (with-input-from-request url #f read-string))
+)
+
+(define (save-to-file path data continuation)
+	(with-output-to-file path (lambda () (display data)))
+	(continuation path)
+)
+
+(define (open-file path continuation)
+	(system (string-append "/usr/local/bin/idea " path))
+	(continuation path)
+)
+
 (define (main args)
-	(display (with-input-from-request "http://wiki.call-cc.org/" #f read-string))
+	(read-from-url "http://i.pinimg.com/736x/35/f7/83/35f783f18d40b7d41fae5c51a25709d1.jpg" (lambda (data)
+		(save-to-file "src/3-coroutines-as-callcc/0-cps/scheme/no-cat.jpg" data (lambda (path)
+			(open-file path (lambda (path)
+				(display (string-append "Opened: " path))
+			))
+		))
+	))
 )
