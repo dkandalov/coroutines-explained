@@ -15,6 +15,8 @@ import com.intellij.openapi.progress.PerformInBackgroundOption
 import com.intellij.openapi.util.io.FileUtil
 import com.intellij.openapi.vfs.VirtualFile
 import liveplugin.implementation.Misc
+import org.codehaus.groovy.runtime.IOGroovyMethods
+import org.codehaus.groovy.runtime.ProcessGroovyMethods
 
 import javax.swing.*
 import java.awt.*
@@ -60,8 +62,8 @@ def showInConsole2 = { message, project ->
 }
 
 def runBash = { command, project ->
-	def result = bash(command)
-	def output = "\$ " + command + "\n" + result.stdout + "\n" + result.stderr
+	def result = bash(command, new File(project.basePath))
+	def output = "\$ " + command + "\n" + IOGroovyMethods.getText(result.inputStream) + "\n" + IOGroovyMethods.getText(result.errorStream)
 	output = output.replaceAll("/Users/dima/IdeaProjects/", "")
 	showInConsole2(output, project)
 	result
@@ -187,8 +189,8 @@ def findParent(folderName, file) {
 	else findParent(folderName, file.parent)
 }
 
-def bash(command) {
-	execute("bash", ["-c", "\"" + command + "\""])
+def bash(String command, File dir) {
+	ProcessGroovyMethods.execute(["bash", "-c", command], [], dir)
 }
 
 static ConsoleViewContentType guessContentTypeOf(text) {
