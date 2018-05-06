@@ -3,7 +3,7 @@
 
 
             (define (main args)
-              (display "hello ")
-              (display "world")
+                (display "hello ")
+                (display "world")
             )
 
