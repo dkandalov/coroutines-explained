@@ -69,10 +69,10 @@ def slides = [
 	"src/3-coroutines-as-callcc/0-cps/scheme/2-factorial-cps.scm",
 	"src/3-coroutines-as-callcc/0-cps/scheme/3-file-download.scm",
 	takeSlides(1),
-	"src/3-coroutines-as-callcc/1-callcc/1-return.scm",
-	"src/3-coroutines-as-callcc/1-callcc/2-saved-continuation.scm",
+	"src/3-coroutines-as-callcc/1-callcc/0-return.scm",
+	"src/3-coroutines-as-callcc/1-callcc/1-saved-continuation.scm",
 	takeSlides(11),
-	"src/3-coroutines-as-callcc/1-callcc/3-yield.scm",
+	"src/3-coroutines-as-callcc/1-callcc/2-yield.scm",
 	"src/4-generators/kotlin/0-basic-yield.kts",
 	takeSlides(4),
 
