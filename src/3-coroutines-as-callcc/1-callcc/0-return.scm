@@ -1,17 +1,17 @@
 
 
 
-            (define (log message)
+            (define (print message)
                 (display message)
                 (newline)
             )
 
             (define (main args)
-                (log 1)
-                (log (call/cc (lambda (continuation)
-                    (log 2)
+                (print 1)
+                (print (call/cc (lambda (continuation)
+                    (print 2)
                     (continuation 3)
-                    (log "🙈")
+                    (print "🙈")
                 )))
-                (log 4)
+                (print 4)
             )

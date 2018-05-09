@@ -1,7 +1,7 @@
 
 
 
-            (define (log message)
+            (define (print message)
                 (display message)
                 (newline)
             )
@@ -9,15 +9,15 @@
             (define (main args)
                 (define count 0)
 
-                (log (+ 100 (call/cc (lambda (continuation)
+                (print (+ 100 (call/cc (lambda (continuation)
                     (set! saved-continuation continuation)
                     (continuation 100)
-                    (log "🙈")
+                    (print "🙈")
                 ))))
 
-                (if (< count 12) (begin
+                (if (< count 3) (begin
                     (set! count (+ 1 count))
-                    (log "🚀")
+                    (print "🚀")
                     (saved-continuation count)
                 ))
             )
