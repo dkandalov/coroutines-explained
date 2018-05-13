@@ -9,7 +9,7 @@
 						yield "🙈";
 					} catch (e) {
 						console.log("catch");
-						yield "💥";
+						yield e + "💥";
 					} finally {
 						console.log("finally");
 					}

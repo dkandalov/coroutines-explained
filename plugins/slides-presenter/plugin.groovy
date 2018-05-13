@@ -44,8 +44,9 @@ def slides = [
 	"src/1-coroutines-yield/0-yield-0.js",
 	"src/1-coroutines-yield/0-yield-1.js",
 	"src/1-coroutines-yield/0-yield-2.js",
-	"src/1-coroutines-yield/0-yield-2-loop.js",
-	"src/1-coroutines-yield/0-yield-3-loop.js",
+	"src/1-coroutines-yield/0-yield-3.js",
+	"src/1-coroutines-yield/0-yield-4-loop.js",
+	"src/1-coroutines-yield/0-yield-4-loop-fixed.js",
 	"src/1-coroutines-yield/0-yield-6-finally.js",
 	"src/1-coroutines-yield/1-yield-factorial.js",
 	"src/1-coroutines-yield/1-yield-factorial-2.js",
@@ -60,7 +61,7 @@ def slides = [
 	takeSlides(2),
 
 	// coroutines as call/cc
-	takeSlides(3),
+	takeSlides(4),
 	"src/3-coroutines-as-callcc/0-cps/scheme/0-hello.scm",
 	"src/3-coroutines-as-callcc/0-cps/scheme/0-hello-cps.scm",
 	"src/3-coroutines-as-callcc/0-cps/scheme/1-id.scm",
