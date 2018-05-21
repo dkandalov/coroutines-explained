@@ -46,10 +46,11 @@ def slides = [
 	"src/1-coroutines-yield/0-yield-2.js",
 	"src/1-coroutines-yield/0-yield-3.js",
 	"src/1-coroutines-yield/0-yield-4-loop.js",
+	"src/1-coroutines-yield/0-yield-4-loop-.js",
 	"src/1-coroutines-yield/0-yield-4-loop-fixed.js",
 	"src/1-coroutines-yield/0-yield-6-finally.js",
 	"src/1-coroutines-yield/1-yield-factorial.js",
-	"src/1-coroutines-yield/1-yield-factorial-2.js",
+	"src/1-coroutines-yield/1-yield-factorial-2-skip.js",
 	"src/1-coroutines-yield/1b-yield-factorial.js",
 
 	// Coroutines as async/await
