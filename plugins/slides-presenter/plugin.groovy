@@ -29,7 +29,7 @@ def slides = [
 	takeSlides(2),
 	takeSlides(7),
 	"src/0-coroutines-as-threads/0-subroutine.lua",
-	takeSlides(12),
+	takeSlides(15),
 	"src/0-coroutines-as-threads/1.lua",
 	"src/0-coroutines-as-threads/2.lua",
 	"src/0-coroutines-as-threads/2_.lua",
@@ -54,11 +54,14 @@ def slides = [
 	"src/1-coroutines-yield/1b-yield-factorial.js",
 
 	// Coroutines as async/await
-	takeSlides(14),
-	"src/2-coroutines-as-asyncawait/0.js",
-	"src/2-coroutines-as-asyncawait/1.js",
-	"src/2-coroutines-as-asyncawait/2.js",
-	"src/2-coroutines-as-asyncawait/2b.js",
+	takeSlides(13),
+	"src/2-coroutines-as-asyncawait/0-execution-flow.js",
+	takeSlides(1),
+	"src/2-coroutines-as-asyncawait/1-async-return.js",
+	takeSlides(1),
+	"src/2-coroutines-as-asyncawait/2-composition.js",
+	"src/2-coroutines-as-asyncawait/3-try-catch.js",
+	"src/2-coroutines-as-asyncawait/4-try-catch-fsm.js",
 	takeSlides(2),
 
 	// coroutines as call/cc
