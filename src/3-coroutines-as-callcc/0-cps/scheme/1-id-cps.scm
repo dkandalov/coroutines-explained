@@ -3,12 +3,12 @@
 
 
 
-				(define (identity value continuation)
+				(define (identity-cps value continuation)
 					(continuation value)
 				)
 
 				(define (main args)
-					(identity 42 (lambda (value)
+					(identity-cps 42 (lambda (value)
 						(display value)
 					))
 				)
