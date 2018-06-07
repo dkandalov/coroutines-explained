@@ -152,7 +152,7 @@ registerEditorListener(pluginDisposable, new FileEditorManagerListener() {
 			ui.zoomModel.setZoomFactor(1.1d)
 			def scrollPane = accessField(ui, ["g", "myScrollPane"], JScrollPane.class)
 			scrollPane.viewport.background = JBColor.white
-			scrollPane.viewport.repaint()
+//			scrollPane.viewport.repaint()
 		}
 
 		def relativePath = file.canonicalPath.replace(slidesBasePath, "")

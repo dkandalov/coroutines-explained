@@ -9,7 +9,7 @@
 					print(5)
 				end
 
-				c = coroutine.create(function(n)
+				c = coroutine.create(function()
 					print(2)
 					sub_function()
 					print(6)
