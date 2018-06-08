@@ -2,7 +2,8 @@ This repository contains
 [Keynote slides](https://github.com/dkandalov/coroutines-explained/blob/master/slides.key) 
 and [source code](https://github.com/dkandalov/coroutines-explained/tree/master/src)
 for [Coroutines explained](https://conference.accu.org/2018/sessions.html#XCoroutinesexplained)
-talk presented at [ACCU 2018 conference](https://conference.accu.org/2018/schedule.html).
+talk presented at [ACCU 2018](https://conference.accu.org/2018/schedule.html)
+and [SoCraTes UK 2018](http://socratesuk.org) conferences.
 The code and slides on might not match the talk at the conference though 
 because it has evolved since then (for exact match, you can check out `accu2018` tag).
 
