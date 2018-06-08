@@ -6,7 +6,6 @@
 
 
 
-
 			function sequentialRead() {
 				let dataSource = createAsyncDataSource([1, 2, 3, 4, 5]);
 				let i = 0;

@@ -6,7 +6,6 @@
 
 
 
-
 			async function sequentialRead() {
 				let dataSource = createAsyncDataSource([null, null, "🐶", "🙈"]);
 				let value = null;

@@ -8,10 +8,10 @@
 					print("c is: " .. coroutine.status(c))
 				end)
 
-				print("c is: " .. coroutine.status(c))
+				print("main is: " .. coroutine.status(c))
 				coroutine.resume(c)
-				print("c is: " .. coroutine.status(c))
+				print("main is: " .. coroutine.status(c))
 				coroutine.resume(c)
-				print("c is: " .. coroutine.status(c))
+				print("main is: " .. coroutine.status(c))
 
 
