@@ -10,6 +10,7 @@
 				}
 
 				let dataSource = createAsyncDataSource([1, 2, 3]);
+
 				dataSource.asyncRead(it => {
 					console.log(it);
 					dataSource.asyncRead(it => {

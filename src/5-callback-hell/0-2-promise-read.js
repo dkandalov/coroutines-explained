@@ -1,9 +1,9 @@
 
 
 
-				function readPromiseFrom(dataSource) {
-					return new Promise((resolve) => {
-						dataSource.asyncRead(it => resolve(it));
+				function readPromiseFrom(asyncDataSource) {
+					return new Promise(resolve => {
+						asyncDataSource.asyncRead(it => resolve(it));
 					});
 				}
 
