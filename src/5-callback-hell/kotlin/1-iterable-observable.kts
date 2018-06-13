@@ -2,8 +2,8 @@
 
 
                 interface Iterator<T> {
+                    fun current(): T // () -> T
                     fun moveNext(): Boolean // @Throws(Exception::class)
-                    fun current(): T
                 }
 
                 interface Iterable<T> {
@@ -13,9 +13,9 @@
                 // -----------------------------------
 
                 interface Observer<T> {
-                    fun onNext(value: T)
-                    fun onError(e: Exception)
+                    fun onNext(value: T) // T -> ()
                     fun onCompleted()
+                    fun onError(e: Exception)
                 }
 
                 interface Observable<T> {
