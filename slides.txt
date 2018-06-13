@@ -1,0 +1,95 @@
+-- This is a slides config file which can be used to do presentation from IJ IDE
+-- using https://github.com/dkandalov/slides-presenter plugin.
+
+
+-- Intro
+slides/slides.{{next 7}}.png
+
+-- Coroutines as threads
+slides/slides.{{next 2}}.png
+slides/slides.{{next 7}}.png
+src/0-coroutines-as-threads/0-subroutine.lua
+slides/slides.{{next 15}}.png
+src/0-coroutines-as-threads/1.lua
+src/0-coroutines-as-threads/2.lua
+src/0-coroutines-as-threads/2_.lua
+slides/slides.{{next 2}}.png
+src/0-coroutines-as-threads/3-c1c2.lua
+slides/slides.{{next 14}}.png
+src/0-coroutines-as-threads/4-sub-yield.lua
+slides/slides.{{next 3}}.png
+
+-- Coroutines as yield
+slides/slides.{{next 5}}.png
+src/1-coroutines-yield/0-yield-0.js
+src/1-coroutines-yield/0-yield-1.js
+src/1-coroutines-yield/0-yield-2.js
+src/1-coroutines-yield/0-yield-3.js
+src/1-coroutines-yield/0-yield-4-loop.js
+src/1-coroutines-yield/0-yield-4-loop-.js
+src/1-coroutines-yield/0-yield-4-loop-fixed.js
+src/1-coroutines-yield/0-yield-6-finally.js
+src/1-coroutines-yield/1-yield-factorial.js
+src/1-coroutines-yield/1-yield-factorial-2-skip.js
+src/1-coroutines-yield/1b-yield-factorial.js
+
+-- Coroutines as async/await
+slides/slides.{{next 13}}.png
+src/2-coroutines-as-asyncawait/0-execution-flow.js
+slides/slides.{{next 1}}.png
+src/2-coroutines-as-asyncawait/1-async-return.js
+slides/slides.{{next 1}}.png
+src/2-coroutines-as-asyncawait/2-composition.js
+src/2-coroutines-as-asyncawait/3-try-catch.js
+src/2-coroutines-as-asyncawait/4-try-catch-fsm.js
+slides/slides.{{next 2}}.png
+
+-- Coroutines as call/cc
+slides/slides.{{next 4}}.png
+src/3-coroutines-as-callcc/0-cps/scheme/0-hello.scm
+src/3-coroutines-as-callcc/0-cps/scheme/0-hello-cps.scm
+src/3-coroutines-as-callcc/0-cps/scheme/1-id.scm
+src/3-coroutines-as-callcc/0-cps/scheme/1-id-cps.scm
+src/3-coroutines-as-callcc/0-cps/scheme/2-factorial.scm
+src/3-coroutines-as-callcc/0-cps/scheme/2-factorial-cps.scm
+src/3-coroutines-as-callcc/0-cps/scheme/3-file-download.scm
+slides/slides.{{next 1}}.png
+src/3-coroutines-as-callcc/1-callcc/0-return.scm
+src/3-coroutines-as-callcc/1-callcc/1-saved-continuation.scm
+slides/slides.{{next 11}}.png
+src/3-coroutines-as-callcc/1-callcc/2-yield.scm
+src/4-generators/kotlin/0-basic-yield.kts
+slides/slides.{{next 4}}.png
+
+-- Coroutines design flavours comparison
+slides/slides.{{next 6}}.png
+
+-- Real world generators examples
+slides/slides.{{next 1}}.png
+src/4-generators/0-date-sequence.kts
+src/4-generators/1-database-stream.kts
+slides/slides.{{next 1}}.png
+
+-- Callback hell
+slides/slides.{{next 1}}.png
+src/5-callback-hell/0-0-blocking-read.js
+src/5-callback-hell/0-1-callback-read.js
+src/5-callback-hell/0-2-promise-read.js
+src/5-callback-hell/0-3-async-read.js
+slides/slides.{{next 3}}.png
+src/5-callback-hell/kotlin/1-iterable-observable.kts
+slides/slides.{{next 2}}.png
+
+-- Monads in imperative language
+slides/slides.{{next 1}}.png
+src/6-async-vs-promises/0-async-while.js
+src/6-async-vs-promises/1-promise-while.js
+src/6-async-vs-promises/2-async-retry.js
+src/6-async-vs-promises/3-promise-retry.js
+slides/slides.{{next 2}}.png
+
+-- Summary
+slides/slides.{{next 8}}.png
+
+-- Bonus
+src/5-callback-hell/kotlin/x-snake.kts
