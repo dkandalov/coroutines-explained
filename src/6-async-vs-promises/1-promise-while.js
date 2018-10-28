@@ -13,7 +13,7 @@
 				while (i++ < 3) {
 					promise = promise
 						.then(() => readPromiseFrom(dataSource))
-						.then((it) => console.log(it));
+						.then(it => console.log(it));
 				}
 			}
 

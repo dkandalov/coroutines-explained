@@ -23,6 +23,7 @@ slides/slides.{{next 3}}.png
 slides/slides.{{next 5}}.png
 src/1-coroutines-yield/0-yield-0.js
 src/1-coroutines-yield/0-yield-1.js
+src/0-coroutines-as-threads/2_.lua
 src/1-coroutines-yield/0-yield-2.js
 src/1-coroutines-yield/0-yield-3.js
 src/1-coroutines-yield/0-yield-4-loop.js

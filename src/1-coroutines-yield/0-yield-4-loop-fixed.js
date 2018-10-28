@@ -13,6 +13,4 @@
 				console.log(c.next("A"));
 				console.log(c.next("B"));
 				console.log(c.next("C"));
-				console.log(c.next("D"));
-				console.log(c.next("E"));
 

@@ -13,10 +13,7 @@
 						}
 						return value;
 					})
-					.then(value => {
-						console.log("read: " + value);
-						return value;
-					});
+					.then(value => console.log("read: " + value));
 				retryAttempt++;
 			}
 			return promise;
