@@ -11,9 +11,9 @@
 				end)
 
 				_, m = coroutine.resume(c, 1)
-				print("main received: " .. tostring(m))
+				print("main received: " .. m)
 				_, m = coroutine.resume(c, 3)
-				print("main received: " .. tostring(m))
+				print("main received: " .. m)
 				_, m = coroutine.resume(c, 5)
 
 

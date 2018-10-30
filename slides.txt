@@ -90,7 +90,7 @@ src/6-async-vs-promises/3-promise-retry.js
 slides/slides.{{next 2}}.png
 
 -- Summary
-slides/slides.{{next 8}}.png
+slides/slides.{{next 9}}.png
 
 -- Bonus
 src/5-callback-hell/kotlin/x-snake.kts

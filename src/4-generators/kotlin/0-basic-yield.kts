@@ -12,17 +12,17 @@ import kotlin.coroutines.experimental.intrinsics.suspendCoroutineOrReturn
 class ResumableFunction {
     private var c: Continuation<Unit>? = null
 
-    fun resume() {
-        val cont = c
-        c = null
-        cont?.resume(Unit)
-    }
-
     suspend fun yield() {
         return suspendCoroutineOrReturn { it: Continuation<Unit> ->
             c = it
             COROUTINE_SUSPENDED
         }
+    }
+
+    fun resume() {
+        val cont = c
+        c = null
+        cont?.resume(Unit)
     }
 
     companion object {
@@ -42,18 +42,18 @@ object EmptyContinuation: Continuation<Unit> {
 
 
 val f = ResumableFunction.create {
-    println(1)
+    println(2)
     yield()
-    println(3)
+    println(4)
     yield()
-    println(5)
+    println(6)
 }
-println(0)
+println(1)
 f.resume()
-println(2)
+println(3)
 f.resume()
-println(4)
+println(5)
 f.resume()
-println(6)
+println(7)
 
 

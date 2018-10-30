@@ -6,7 +6,7 @@ static class Program
 {
     public static void Main(string[] args)
     {
-        var enumerator = new FibonacciEnumerator();
+        var enumerator = Fibonacci();
         for (int i = 0; i < 10; i++)
         {
             enumerator.MoveNext();
