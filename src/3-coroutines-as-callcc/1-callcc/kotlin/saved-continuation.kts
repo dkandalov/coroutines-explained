@@ -7,10 +7,6 @@ import kotlin.coroutines.intrinsics.suspendCoroutineUninterceptedOrReturn
 import kotlin.coroutines.intrinsics.COROUTINE_SUSPENDED
 import kotlin.coroutines.resume
 
-fun createCoroutine(block: suspend Unit.() -> Unit) {
-    block.createCoroutine(Unit, completion = MyContinuation(MyEmptyCoroutineContext)).resume(Unit)
-}
-
 var count = 0
 var savedContinuation: Continuation<Int>? = null
 
@@ -20,12 +16,20 @@ createCoroutine {
         continuation.resume(100)
         println("🐶")
     })
-    if (count < 5) {
-        println("🚀 $count")
+    if (count < 3) {
         count += 1
+        println("🚀")
         savedContinuation?.resume(count) // recursive
     }
 }
+
+
+fun createCoroutine(block: suspend Unit.() -> Unit) {
+    block.createCoroutine(Unit, completion = MyContinuation(MyEmptyCoroutineContext)).resume(Unit)
+}
+
+
+
 
 
 

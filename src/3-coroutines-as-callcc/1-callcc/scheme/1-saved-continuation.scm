@@ -1,11 +1,6 @@
 
 
 
-            (define (print message)
-                (display message)
-                (newline)
-            )
-
             (define (main args)
                 (define count 0)
 
@@ -21,3 +16,8 @@
                     (saved-continuation count)
                 ))
             )
+
+			(define (print message)
+			 (display message)
+			 (newline)
+			)
