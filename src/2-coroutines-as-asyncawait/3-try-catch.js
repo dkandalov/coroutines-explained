@@ -22,5 +22,5 @@
 			}
 
 			let overallPromise = c();
-			overallPromise.then(result => console.log(result));
+			overallPromise.then(result => console.log("overall " + result));
 

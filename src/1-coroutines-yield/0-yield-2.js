@@ -3,8 +3,8 @@
 
 
 				function* createGenerator() {
-					console.log(yield);
-					console.log(yield);
+					yield;
+					yield;
 				}
 
 				const c = createGenerator();
