@@ -65,9 +65,6 @@ src/3-coroutines-as-callcc/1-callcc/kotlin/saved-continuation.kts
 src/3-coroutines-as-callcc/1-callcc/scheme/2-yield.scm
 slides/slides.{{next 4}}.png
 
--- Coroutines design flavours comparison
-slides/slides.{{next 6}}.png
-
 -- Callback hell
 slides/slides.{{next 1}}.png
 src/5-callback-hell/0-0-blocking-read.js
@@ -87,7 +84,10 @@ src/6-async-vs-promises/3-promise-retry.js
 slides/slides.{{next 2}}.png
 
 -- Summary
-slides/slides.{{next 9}}.png
+slides/slides.{{next 2}}.png
+-- Coroutines design flavours comparison
+slides/slides.{{next 6}}.png
+slides/slides.{{next 7}}.png
 
 -- Bonus
 src/5-callback-hell/kotlin/x-snake.kts
