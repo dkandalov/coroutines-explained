@@ -1,7 +1,6 @@
 -- This is a slides config file which can be used to do presentation from IJ IDE
 -- using https://github.com/dkandalov/slides-presenter plugin.
 
-
 -- Intro
 slides/slides.{{next 7}}.png
 
@@ -31,7 +30,6 @@ src/1-coroutines-yield/0-yield-4-loop-.js
 src/1-coroutines-yield/0-yield-4-loop-fixed.js
 src/1-coroutines-yield/0-yield-6-finally.js
 src/1-coroutines-yield/1-yield-factorial.js
-src/1-coroutines-yield/1-yield-factorial-1-iterable.js
 src/1-coroutines-yield/1-yield-factorial-2-skip.js
 src/1-coroutines-yield/1b-yield-factorial.js
 src/1-coroutines-yield/kotlin/1-database-stream.kts
@@ -51,17 +49,13 @@ slides/slides.{{next 1}}.png
 slides/slides.{{next 4}}.png
 src/3-coroutines-as-callcc/0-cps/scheme/0-hello.scm
 src/3-coroutines-as-callcc/0-cps/scheme/0-hello-cps.scm
-src/3-coroutines-as-callcc/0-cps/scheme/1-id.scm
-src/3-coroutines-as-callcc/0-cps/scheme/1-id-cps.scm
 src/3-coroutines-as-callcc/0-cps/scheme/2-factorial.scm
 src/3-coroutines-as-callcc/0-cps/scheme/2-factorial-cps.scm
-src/3-coroutines-as-callcc/0-cps/scheme/3-file-download.scm
 slides/slides.{{next 1}}.png
 src/3-coroutines-as-callcc/1-callcc/scheme/0-return.scm
 src/3-coroutines-as-callcc/1-callcc/scheme/1-saved-continuation.scm
 slides/slides.{{next 11}}.png
 src/3-coroutines-as-callcc/1-callcc/scheme/1-saved-continuation.scm
-src/3-coroutines-as-callcc/1-callcc/kotlin/saved-continuation.kts
 src/3-coroutines-as-callcc/1-callcc/scheme/2-yield.scm
 slides/slides.{{next 4}}.png
 
