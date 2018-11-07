@@ -34,6 +34,7 @@ src/1-coroutines-yield/1-yield-factorial.js
 src/1-coroutines-yield/1-yield-factorial-1-iterable.js
 src/1-coroutines-yield/1-yield-factorial-2-skip.js
 src/1-coroutines-yield/1b-yield-factorial.js
+src/1-coroutines-yield/kotlin/1-database-stream.kts
 
 -- Coroutines as async/await
 slides/slides.{{next 13}}.png
@@ -66,12 +67,6 @@ slides/slides.{{next 4}}.png
 
 -- Coroutines design flavours comparison
 slides/slides.{{next 6}}.png
-
--- Real world generators examples
-slides/slides.{{next 1}}.png
-src/4-generators/0-date-sequence.kts
-src/4-generators/1-database-stream.kts
-slides/slides.{{next 1}}.png
 
 -- Callback hell
 slides/slides.{{next 1}}.png
