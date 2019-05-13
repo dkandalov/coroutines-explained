@@ -1,5 +1,6 @@
 @file:Suppress("EXPERIMENTAL_FEATURE_WARNING", "UNUSED_PARAMETER")
 
+import _1_database_stream.ResultSet
 import kotlin.coroutines.experimental.buildSequence
 
 
@@ -21,20 +22,6 @@ class AnimalsDbTable {
         }
     }
 }
-
-data class Row(
-    val id: Int,
-    val value: String
-)
-
-
-
-
-
-AnimalsDbTable()
-    .readRows()
-    .forEach { row -> println(row) }
-
 
 
 
@@ -73,6 +60,19 @@ class AnimalsDbTableV2 {
 
 
 
+
+data class Row(
+    val id: Int,
+    val value: String
+)
+
+
+
+
+
+AnimalsDbTable()
+    .readRows()
+    .forEach { row -> println(row) }
 
 
 

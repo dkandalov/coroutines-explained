@@ -6,7 +6,7 @@
 
                 (print (+ 100 (call/cc (lambda (continuation)
                     (set! saved-continuation continuation)
-                    (continuation 100)
+                    (saved-continuation 100)
                     (print "🙈")
                 ))))
 

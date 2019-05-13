@@ -77,6 +77,7 @@ https://www.youtube.com/watch?v=fpyub8fbrVE
  - 2015: ECMAScript 2015 (https://en.wikipedia.org/wiki/ECMAScript#Versions)
  - 2017: Kotlin 1.1 with coroutines 
  - 2017: LLVM support for coroutines (https://www.infoworld.com/article/3180344/application-development/llvm-coroutines-come-to-c-await-swift-and-rust.html)
+ - 2019: Coroutines approved for C++20 (https://en.wikipedia.org/wiki/C%2B%2B20)
  
  - One of the large new features in PHP 5.5 will be support for generators and coroutines.
     - https://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html
