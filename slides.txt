@@ -2,7 +2,7 @@
 -- using https://github.com/dkandalov/slides-presenter plugin.
 
 -- Intro
-slides/slides.{{next 7}}.png
+slides/slides.{{next 9}}.png
 
 -- Coroutines as threads
 slides/slides.{{next 2}}.png
