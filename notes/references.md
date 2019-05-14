@@ -75,11 +75,11 @@ https://www.youtube.com/watch?v=fpyub8fbrVE
  - 2012: async/await in C# 5.0 (https://en.wikipedia.org/wiki/C_Sharp_(programming_language)#Versions)
  - 2015: async/await in Python 3.5 (https://www.python.org/dev/peps/pep-0492/)
  - 2015: ECMAScript 2015 (https://en.wikipedia.org/wiki/ECMAScript#Versions)
- - 2017: Kotlin 1.1 with coroutines 
+ - 2017: coroutines in Kotlin 1.1 
  - 2017: LLVM support for coroutines (https://www.infoworld.com/article/3180344/application-development/llvm-coroutines-come-to-c-await-swift-and-rust.html)
  - 2019: Coroutines approved for C++20 (https://en.wikipedia.org/wiki/C%2B%2B20)
+ - 202x: Project Loom (https://wiki.openjdk.java.net/display/loom/Main)
  
  - One of the large new features in PHP 5.5 will be support for generators and coroutines.
     - https://nikic.github.io/2012/12/22/Cooperative-multitasking-using-coroutines-in-PHP.html
  - ES2018 http://2ality.com/2016/10/asynchronous-iteration.html
-
