@@ -3,18 +3,12 @@
 
 
 				function* createGenerator() {
-					console.log("2");
-					yield;
-					console.log("4");
-					yield;
-					console.log("🙈");
+					console.log(yield "🐶");
+					console.log(yield "🐷");
+					console.log(yield "🙈");
 				}
 
 				const c = createGenerator();
-				console.log("1");
-				c.next();
-				console.log("3");
-				c.next();
-				console.log("5");
-
+				console.log(c.next("A is lost").value);
+				console.log(c.next("B").value);
 

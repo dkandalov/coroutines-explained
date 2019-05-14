@@ -53,7 +53,4 @@ function factorial() {
 
 var f = factorial();
 console.log(f.next());
-console.log(f.next());
-console.log(f.next());
-console.log(f.next());
 console.log(f.next(10));

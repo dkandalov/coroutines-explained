@@ -3,12 +3,12 @@
 
 
 				function* createGenerator() {
-					console.log(yield "🐶");
-					console.log(yield "🐷");
+					yield;
+					yield;
 				}
 
 				const c = createGenerator();
-				console.log(c.next("A is lost"));
-				console.log(c.next("B"));
-				console.log(c.next("C"));
+				console.log("done: " + c.next().done);
+				console.log("done: " + c.next().done);
+				console.log("done: " + c.next().done);
 

@@ -4,8 +4,7 @@
 
 				function* createGenerator() {
 					try {
-						let value = yield "🐶";
-						if (value === "🚀") throw value;
+						throw "🚀";
 						yield "🙈";
 					} catch (e) {
 						console.log("catch");
@@ -17,6 +16,5 @@
 
 				const c = createGenerator();
 				console.log(c.next());
-				console.log(c.next("🚀"));
 				console.log(c.next());
 

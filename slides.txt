@@ -2,7 +2,7 @@
 -- using https://github.com/dkandalov/slides-presenter plugin.
 
 -- Intro
-slides/slides.{{next 9}}.png
+slides/slides.{{next 10}}.png
 
 -- Coroutines as threads
 slides/slides.{{next 2}}.png
@@ -14,36 +14,34 @@ src/0-coroutines-as-threads/2.lua
 src/0-coroutines-as-threads/2_.lua
 slides/slides.{{next 2}}.png
 src/0-coroutines-as-threads/3-c1c2.lua
-slides/slides.{{next 14}}.png
+slides/slides.{{next 12}}.png
 src/0-coroutines-as-threads/4-sub-yield.lua
-slides/slides.{{next 3}}.png
+slides/slides.{{next 5}}.png
 
 -- Coroutines as yield
-slides/slides.{{next 3}}.png
+slides/slides.{{next 5}}.png
 src/1-coroutines-yield/0-yield-0.js
-slides/slides.{{next 2}}.png
 src/1-coroutines-yield/0-yield-1.js
 src/1-coroutines-yield/0-yield-2.js
 src/1-coroutines-yield/0-yield-3.js
 src/1-coroutines-yield/0-yield-4-loop.js
-src/1-coroutines-yield/0-yield-4-loop-.js
+-- src/1-coroutines-yield/0-yield-4-loop-.js
 src/1-coroutines-yield/0-yield-4-loop-fixed.js
 src/1-coroutines-yield/0-yield-6-finally.js
 src/1-coroutines-yield/1-yield-factorial.js
 src/1-coroutines-yield/1-yield-factorial-2-skip.js
 src/1-coroutines-yield/1b-yield-factorial.js
-src/1-coroutines-yield/kotlin/1-database-stream.kts
+-- src/1-coroutines-yield/kotlin/1-database-stream.kts
+slides/slides.{{next 1}}.png
 
 -- Coroutines as async/await
-slides/slides.{{next 13}}.png
-src/2-coroutines-as-asyncawait/0-execution-flow.js
-slides/slides.{{next 1}}.png
+slides/slides.{{next 12}}.png
 src/2-coroutines-as-asyncawait/1-async-return.js
-slides/slides.{{next 1}}.png
+slides/slides.{{next 3}}.png
 src/2-coroutines-as-asyncawait/2-composition.js
 src/2-coroutines-as-asyncawait/3-try-catch.js
 src/2-coroutines-as-asyncawait/4-try-catch-fsm.js
-slides/slides.{{next 1}}.png
+slides/slides.{{next 2}}.png
 
 -- Coroutines as call/cc
 slides/slides.{{next 4}}.png

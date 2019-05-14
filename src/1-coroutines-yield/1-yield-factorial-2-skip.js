@@ -7,11 +7,8 @@
 					let result = 1;
 					let skip = 0;
 					while (true) {
-						if (!skip) {
-							skip = yield result;
-						} else {
-							skip--;
-						}
+						if (!skip) skip = yield result;
+						else skip--;
 						n++;
 						result = result * n;
 					}
